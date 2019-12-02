@@ -15,7 +15,8 @@ Note: No external DNS domain registration needed
 
 ###  Cluster configuration:
 ```
-- ./tf/vpc/terraform.tvars
+./tf/state/terraform.tvars
+./tf/vpc/terraform.tvars
 ```
 
 ### Provisioning steps:
@@ -47,7 +48,7 @@ export KOPS_STATE_STORE=s3://"levsky-kops-state"
 
 kops validate cluster
 ```
-### Create Bastion for SSH access
+### Add Bastion Host For SSH access
 ```
 1. Add bastion instance group to cluster configuration
 kops create instancegroup bastions --role Bastion \
