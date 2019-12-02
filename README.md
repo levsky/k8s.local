@@ -11,7 +11,8 @@ Note: No external DNS domain registration needed
 - kops version - 1.15.0
 - kubectl version - 1.16.3
 - jq version - 1.5.1
-- change every accurnce of 'levsky' to something else, e.g "my-f-cluster"
+- change every accurnce of 'levsky' to something else, e.g "my-f-cluster" (to find: grep -r levsky *)
+- ssh key pair with default name - id_rsa and id_rsa.pub should be in ~/.ssh/ directory 
 
 ###  Cluster configuration:
 ```
