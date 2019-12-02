@@ -1,4 +1,5 @@
-## k8s.local
+## Kubernetes k8s.local Cluster Provisioning - AWS Cloud Provider 
+- Credits to https://github.com/kubernetes/kops/blob/master/docs/examples/kops-tests-private-net-bastion-host.md#adding-a-bastion-host-to-our-cluster
 
 ###  This package helps:
 - create VPC and Internet Gateway 
@@ -7,11 +8,12 @@
 Note: No external DNS domain registration needed
 
 ### Prerequisites
+- AWS account and CLI configured - aws-cli/1.16.113
 - terraform version - 0.10.8
 - kops version - 1.15.0
 - kubectl version - 1.16.3
 - jq version - 1.5.1
-- change every accurnce of 'levsky' to something else, e.g "my-f-cluster" (to find: grep -r levsky *)
+- change every occurrence of 'levsky' to something else, e.g 'my-f-cluster' (to find: grep -r levsky *)
 - ssh key pair with default name - id_rsa and id_rsa.pub should be in ~/.ssh/ directory 
 
 ###  Cluster configuration:
