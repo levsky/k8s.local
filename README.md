@@ -49,7 +49,7 @@ export KOPS_STATE_STORE=s3://"levsky-kops-state"
 
 kops validate cluster
 ```
-### Add Bastion Host For SSH access
+### For SSH Access Add Bastion Host 
 ```
 1. Add bastion instance group to cluster configuration
 kops create instancegroup bastions --role Bastion \
