@@ -5,7 +5,7 @@
 - create VPC and Internet Gateway 
 - provision HA k8s.local 3 node cluster   
 
-Note: No external DNS domain registration needed
+Note: No external DNS domain registration needed for this implementation
 
 ### Prerequisites
 - AWS account and CLI configured - aws-cli/1.16.113
